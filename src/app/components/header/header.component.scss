@@ -1,0 +1,56 @@
+@import "src/styles/mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  box-shadow: .5rem .5rem .5rem #F5F5F5;
+  padding: 2rem 36rem 2rem;
+
+  @include respond(big-desktop) {
+    padding: 2rem 20rem 2rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 2rem 10rem 2rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 2rem 10rem 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 2rem 4rem 2rem;
+    justify-content: flex-start;
+  }
+
+  @include respond(phone) {
+    justify-content: space-between;
+  }
+
+
+  &__nav {
+    margin-left: 25rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-flow: column wrap;
+    }
+    @include respond(phone) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__nav-item {
+    text-decoration: none;
+    color: var(--color-orange-grey);
+    font-size: 2.1rem;
+    font-family: Muller;
+
+    &:not(:last-child) {
+      padding-right: 5rem;
+    }
+  }
+}
+
+

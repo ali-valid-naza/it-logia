@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer__text-block">
+    <h2 class="footer__header footer__header-1">Хватит думать!
+      <span class="footer__header-2">Доставим заказ за 30 минут!</span>
+    </h2>
+    <p class="footer__text">
+      Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту -
+      вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ.
+      Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!
+    </p>
+  </div>
+  <app-order-form (clearOrderStaff)="notifyParent($event)"></app-order-form>
+  <img
+    class="footer__img"
+    src="../../../assets/img/pizza-footer.png"
+    alt="pizza piece">
+
+</footer>

@@ -1,7 +1,7 @@
 import { Component, Injector } from '@angular/core';
 import { TransitDataService } from '../../services/transit-data-service/transit-data.service';
 import { Goods, OrderStaff } from '../../types/types';
-import { ShownCustomElementService } from '../../services/shown-custom-element-service/show-custom-element.service';
+import { ShownCustomElementService } from '../../services/shown-custom-element-service/shown-custom-element.service';
 import { createCustomElement } from '@angular/elements';
 import { ModalElementComponent } from '../modal-element/modal-element.component';
 

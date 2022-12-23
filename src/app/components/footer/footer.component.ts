@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  @Output() notifyParentClearDataStaff = new EventEmitter()
 
+  notifyParent(v: boolean) {
+    this.notifyParentClearDataStaff.emit(v)
+  }
 }

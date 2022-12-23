@@ -1,1 +1,33 @@
-<p>order-form works!</p>
+<div class="form">
+  <form [formGroup]="orderForm"
+        (ngSubmit)="onSubmit()"
+  >
+    <input
+      class="form__input"
+      type="text"
+      formControlName="name"
+      placeholder="Ваше имя"
+      (input)="onInput($event)"
+    >
+    <input
+      class="form__input"
+      type="text"
+      formControlName="address"
+      placeholder="Адрес доставки"
+    >
+    <input
+      class="form__input"
+      type="tel"
+      formControlName="phone"
+      placeholder="Телефон"
+    >
+    <input
+      class="form__button"
+      type="submit"
+      value="Оформить заказ"
+      [disabled]="!orderForm.valid"
+    >
+  </form>
+
+  <p>Form Status: {{ orderForm.status }}</p>
+</div>

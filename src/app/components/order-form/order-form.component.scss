@@ -1,0 +1,32 @@
+.form {
+  padding-right: 8rem;
+
+  &__input {
+    display: block;
+    width: 33rem;
+    height: 6rem;
+    border: var(--color-orange-grey) .1rem solid;
+    border-left: none;
+  }
+
+  &__input:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__input::placeholder {
+    padding-left: 2rem;
+    font-family: Muller;
+    font-size: 1.8rem;
+    color: var(--color-orange-grey);
+  }
+
+  &__button {
+    font-family: MullerBold;
+    font-size: 1.6rem;
+    width: 33rem;
+    height: 6rem;
+    border: none;
+    background-color: var(--color-orange);
+  }
+}
+

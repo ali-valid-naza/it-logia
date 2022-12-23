@@ -1,7 +1,7 @@
 @import "src/styles/mixins";
 
 .about {
-  padding: 14rem 36rem 14rem;
+  padding: 14rem 36rem 0;
   display: flex;
 
   @include respond(big-desktop) {

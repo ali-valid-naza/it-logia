@@ -1,0 +1,132 @@
+@import "src/styles/mixins";
+
+.about {
+  padding: 14rem 36rem 14rem;
+  display: flex;
+
+  @include respond(big-desktop) {
+    padding: 8rem 0 2rem;
+    justify-content: space-around;
+  }
+
+  @include respond(tab-land) {
+    justify-content: space-around;
+    padding: 8rem 8rem 2rem;
+  }
+
+  @include respond(small-phone) {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8rem 8rem 2rem;
+  }
+
+  &__left {
+    @include respond(big-desktop) {
+      width: 64rem
+    }
+
+    @include respond(small-phone) {
+      width: auto;
+    }
+  }
+
+  &__right {
+    @include respond(big-desktop) {
+      width: 26rem;
+      height: 17rem;
+      display: flex;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__header-1 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    font-family: MullerExtraBold;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    &_grey {
+      color: var(--color-orange-grey);
+    }
+
+    &_orange {
+      display: block;
+      color: var(--color-orange);
+    }
+  }
+
+  &__header-2 {
+    color: var(--color-orange);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  &__text {
+    color: var(--color-orange-grey);
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    max-width: 23rem;
+  }
+
+
+  &__button {
+    width: 22.4rem;
+    height: 6rem;
+    border: none;
+    background-color: var(--color-orange);
+    font-size: 1.6rem;
+
+    @include respond(phone) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__img {
+    @include respond(big-desktop) {
+      flex-shrink: 1;
+    }
+  }
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  @include respond(small-phone) {
+    flex-direction: column;
+  }
+
+
+  &__container {
+    display: flex;
+  }
+  &__container:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__button {
+    width: 22.4rem;
+    height: 6rem;
+    border: none;
+    background-color: var(--color-orange);
+    font-size: 1.6rem;
+    font-family: MullerBold;
+
+    @include respond(phone) {
+      margin-top: 1.5rem;
+    }
+  }
+}

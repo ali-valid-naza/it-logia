@@ -1,1 +1,25 @@
-<p>create-order works!</p>
+<div class="gallery">
+  <h2 class="gallery__header">Выберите свою любимую пиццу</h2>
+  <div class="gallery__container">
+    <div
+      class="gallery__item"
+      *ngFor="let good of goods; let i = index"
+    >
+      <img
+        class="gallery__img"
+        src="../../../{{ good.img_src }}"
+        alt="{{ good.alt }}"
+        (click)="popup.showAsElementModal(good.img_src, good.alt)"
+      >
+
+      <h4 class="gallery__title">{{ good.title }}</h4>
+      <span class="gallery__about">{{ good.about }}</span>
+      <button
+        class="gallery__button"
+        (click)="onClick(i)"
+      >В корзину
+      </button>
+    </div>
+  </div>
+</div>
+<app-footer (notifyParentClearDataStaff)="clearOrderStaff($event)"></app-footer>

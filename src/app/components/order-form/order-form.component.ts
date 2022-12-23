@@ -34,7 +34,6 @@ export class OrderFormComponent {
   });
 
 
-
   emitEvent() {
     this.clearOrderStaff.emit(true);
   }
@@ -45,7 +44,7 @@ export class OrderFormComponent {
         this.order.orderStaff = v;
         this.order.orderClient = this.orderForm.value;
         this.clearOrderStaff.emit(true);
-        this.sendToServerService.addOrder(this.order)
+        this.sendToServerService.addOrder(this.order);
       }).unsubscribe();
     this.orderForm.reset({
       name: null,

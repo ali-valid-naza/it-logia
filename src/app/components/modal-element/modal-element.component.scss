@@ -1,0 +1,29 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-white);
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__button {
+    margin-top: 10rem;
+    height: 10rem;
+    width: 40rem;
+    border-radius: 5px;
+    background-color: var(--color-orange-grey);
+    border: 2px var(--color-primary-white) solid;
+    font-family: MullerBold;
+    font-size: 2.6rem;
+  }
+}

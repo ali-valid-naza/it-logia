@@ -1,1 +1,11 @@
-<p>modal-element works!</p>
+<div class="modal">
+  <img
+    class="modal__img"
+    src="{{ src }}"
+    alt="{{ alt }}">
+  <button
+    class="modal__button"
+    type="button"
+    (click)="closed.next()">Закрыть</button>
+</div>
+

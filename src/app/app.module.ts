@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ModalElementComponent } from './components/modal-element/modal-element.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { OrderFormComponent } from './components/order-form/order-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { OrderFormComponent } from './components/order-form/order-form.component
     OrderFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

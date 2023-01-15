@@ -1,5 +1,6 @@
 .form {
-  padding-right: 8rem;
+  margin-left: 13rem;
+  height: 31rem;
 
   &__input {
     display: block;
@@ -9,8 +10,16 @@
     border-left: none;
   }
 
-  &__input:not(:last-child) {
-    margin-bottom: 3rem;
+  &__input_name {
+    margin-top: 6rem;
+  }
+
+  &__input_address {
+    margin-top: 2.2rem;
+  }
+
+  &__input_tel {
+    margin-top: 2.2rem;
   }
 
   &__input::placeholder {
@@ -27,6 +36,7 @@
     height: 6rem;
     border: none;
     background-color: var(--color-orange);
+    margin-top: 2.8rem;
   }
 }
 

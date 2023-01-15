@@ -1,13 +1,8 @@
 @import "src/styles/mixins";
 
 .about {
-  padding: 14rem 36rem 0;
+  padding: 12.5rem 34rem 0 36rem;
   display: flex;
-
-  @include respond(big-desktop) {
-    padding: 8rem 0 2rem;
-    justify-content: space-around;
-  }
 
   @include respond(tab-land) {
     justify-content: space-around;
@@ -44,7 +39,7 @@
 
   &__header-1 {
     font-size: 4.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4.5rem;
     font-family: MullerExtraBold;
 
     @include respond(tab-port) {
@@ -57,6 +52,7 @@
 
     &_orange {
       display: block;
+      margin-top: 1.3rem;
       color: var(--color-orange);
     }
   }
@@ -82,20 +78,8 @@
     max-width: 23rem;
   }
 
-
-  &__button {
-    width: 22.4rem;
-    height: 6rem;
-    border: none;
-    background-color: var(--color-orange);
-    font-size: 1.6rem;
-
-    @include respond(phone) {
-      margin-top: 1.5rem;
-    }
-  }
-
   &__img {
+    padding-top: 4.5rem;
     @include respond(big-desktop) {
       flex-shrink: 1;
     }
@@ -109,12 +93,19 @@
     flex-direction: column;
   }
 
+  &__chiefs {
+    padding-left: 3.5rem;
+  }
+
+  &__recipes {
+    padding-left: 3.5rem;
+  }
 
   &__container {
     display: flex;
   }
   &__container:not(:last-child) {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
   &__button {
@@ -124,6 +115,7 @@
     background-color: var(--color-orange);
     font-size: 1.6rem;
     font-family: MullerBold;
+    margin-top: 2rem;
 
     @include respond(phone) {
       margin-top: 1.5rem;

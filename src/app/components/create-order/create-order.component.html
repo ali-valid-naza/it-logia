@@ -5,12 +5,14 @@
       class="gallery__item"
       *ngFor="let good of goods; let i = index"
     >
-      <img
-        class="gallery__img"
-        src="{{ good.img_src }}"
-        alt="{{ good.alt }}"
-        (click)="popup.showAsElementModal(good.img_src, good.alt)"
-      >
+      <div class="gallery__img-box">
+        <img
+          class="gallery__img"
+          src="{{ good.img_src }}"
+          alt="{{ good.alt }}"
+          (click)="popup.showAsElementModal(good.img_src, good.alt)"
+        >
+      </div>
 
       <h4 class="gallery__title">{{ good.title }}</h4>
       <span class="gallery__about">{{ good.about }}</span>

@@ -1,10 +1,11 @@
 .gallery {
-  padding: 14rem 36rem 0;
+  padding: 14rem 31rem 0 36rem;
 
   &__container {
-    max-width: 120rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
   }
 
   &__header {
@@ -12,25 +13,53 @@
     line-height: 5.5rem;
     color: var(--color-orange-grey);
     text-align: center;
+    padding-top: 1rem;
+    padding-right: 3.5rem;
   }
 
   &__item {
+    margin-right: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 28rem;
-    height: 35rem;
+    width: 28.2rem;
+    height: 37rem;
     text-align: center;
+  }
+
+  &__item:nth-of-type(1) {
+    margin-bottom: 2rem;
+  }
+
+  &__item:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+
+  &__item:nth-of-type(3) {
+    margin-bottom: 2rem;
+  }
+
+  &__item:nth-of-type(4) {
+    margin-bottom: 2rem;
+  }
+
+  &__img-box {
+    width: 22rem;
+    height: 15rem;
+    margin-top: 4rem;
   }
 
   &__title {
     font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.1rem;
   }
 
+
   &__about {
-    display: inline-block;
-    max-width: 21rem;
+    display: block;
+    max-width: 24rem;
+    height: 5rem;
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
@@ -41,5 +70,6 @@
     border: none;
     background-color: var(--color-orange);
     font-size: 1.6rem;
+    margin-top: 2rem;
   }
 }
